@@ -1,0 +1,38 @@
+{
+  "geode": "v5.0.0",
+  "gd": {
+    "android": "2.2083"
+  },
+  "id": "jlmh.predictive-input-buffer",
+  "name": "Predictive Input Buffer",
+  "version": "v1.1.0",
+  "developer": "jlmh",
+  "description": "Frame-based touch input delay/buffer prototype for Geometry Dash 2.2083 on Android.",
+  "tags": [
+    "gameplay",
+    "utility"
+  ],
+  "settings": {
+    "enabled": {
+      "name": "Enable frame buffer",
+      "description": "Enable frame-based input buffering.",
+      "type": "bool",
+      "default": false
+    },
+    "buffer-frames": {
+      "name": "Buffer frames",
+      "description": "Frames to delay each input event (0-3). This is delay/replay, not automatic frame-perfect detection.",
+      "type": "int",
+      "default": 1,
+      "min": 0,
+      "max": 3,
+      "control": {
+        "slider": true,
+        "slider-step": 1,
+        "arrows": true,
+        "arrow-step": 1,
+        "input": false
+      }
+    }
+  }
+}
